@@ -171,7 +171,7 @@ function ContactSection() {
                     <a href="https://www.linkedin.com/in/archishah61/" target="_blank" className="hover:text-primary">
                       <Linkedin />
                     </a>
-                    <a href="" target="_blank" className="hover:text-primary">
+                    <a href="https://x.com/archishah61/" target="_blank" className="hover:text-primary">
                       <Twitter />
                     </a>
                     <a href="https://www.instagram.com/_archishah_07/" target="_blank" className="hover:text-primary">

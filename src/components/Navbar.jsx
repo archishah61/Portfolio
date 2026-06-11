@@ -6,7 +6,30 @@ import { Link, useLocation } from "react-router-dom";
 function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState(false);
     const location = useLocation();
+
+    useEffect(() => {
+        const storedTheme = localStorage.getItem("theme");
+        if (storedTheme === "dark") {
+            setIsDarkMode(true);
+            document.documentElement.classList.add("dark");
+        } else {
+            setIsDarkMode(false);
+        }
+    }, []);
+
+    const toggleTheme = () => {
+        if (isDarkMode) {
+            document.documentElement.classList.remove("dark");
+            localStorage.setItem("theme", "light");
+            setIsDarkMode(false);
+        } else {
+            document.documentElement.classList.add("dark");
+            localStorage.setItem("theme", "dark");
+            setIsDarkMode(true);
+        }
+    };
 
     const isCyberPage = location.pathname === '/cyber';
 
@@ -108,6 +131,23 @@ function Navbar() {
                             </a>
                         )
                     ))}
+
+                    {/* Theme Toggle */}
+                    <button
+                        onClick={toggleTheme}
+                        className="flex items-center gap-3 text-foreground/80 hover:text-primary transition-colors duration-300"
+                        aria-label="Toggle theme"
+                    >
+                        {isDarkMode ? (
+                            <>
+                                <span>Light Mode</span>
+                            </>
+                        ) : (
+                            <>
+                                <span>Dark Mode</span>
+                            </>
+                        )}
+                    </button>
                 </div>
             </div>
         </div>

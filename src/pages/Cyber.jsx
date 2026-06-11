@@ -3,6 +3,10 @@ import HeroCyber from "../components/HeroCyber"
 import Navbar from "../components/Navbar"
 import StarBackground from "../components/StarBackground"
 import ThemeToggle from "../components/ThemeToggle"
+import CyberTimeline from "../components/CyberTimeline"
+import CyberMilestones from "../components/CyberMilestones"
+import CyberCertificates from "../components/CyberCertificates"
+import CyberBlogs from "../components/CyberBlogs"
 
 function Cyber() {
     return (
@@ -18,7 +22,11 @@ function Cyber() {
 
             {/* Main Content */}
             <main>
-                <HeroCyber/>
+                <HeroCyber />
+                <CyberTimeline />
+                <CyberMilestones />
+                <CyberCertificates />
+                <CyberBlogs />
             </main>
 
             {/* Footer */}

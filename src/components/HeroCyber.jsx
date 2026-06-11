@@ -1,7 +1,34 @@
+import React from 'react'
+import { Terminal, Shield, Lock } from 'lucide-react'
+
 export default function HeroCyber() {
     return (
-        <div>
-            <h1>Hero Cyber</h1>
-        </div>
+        <section className='relative pt-32 pb-20 flex flex-col items-center justify-center px-4'>
+            <div className='container max-w-5xl mx-auto text-center z-10'>
+                <div className='inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary mb-6 border border-primary/20 animate-fade-in'>
+                    <Terminal className='w-4 h-4' />
+                    <span className='text-sm font-mono'>root@portfolio:~# ./cyber-journey.sh</span>
+                </div>
+                <h1 className='text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6'>
+                    <span className='opacity-0 animate-fade-in-delay-1 text-foreground'>My </span>
+                    <span className='text-primary opacity-0 animate-fade-in-delay-2 text-glow'>Cybersecurity</span>
+                    <span className='text-gradient ml-2 opacity-0 animate-fade-in-delay-3'> Journey</span>
+                </h1>
+                <p className='text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto opacity-0 animate-fade-in-delay-4'>
+                    Exploring the depths of systems, uncovering vulnerabilities, and learning to build robust, secure environments. This is a log of my milestones, certs, and thoughts along the way.
+                </p>
+                <div className='opacity-0 animate-fade-in-delay-5 mt-10 flex justify-center gap-4'>
+                    <a href='#timeline' className='cosmic-button'>
+                        Explore the Log
+                    </a>
+                </div>
+            </div>
+
+            {/* Decorative background elements specific to cyber hero */}
+            <div className='absolute inset-0 overflow-hidden pointer-events-none'>
+                <div className='absolute top-1/4 left-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl' />
+                <div className='absolute bottom-1/4 right-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl' />
+            </div>
+        </section>
     )
 }

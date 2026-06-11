@@ -9,7 +9,7 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="*" element={<NotFound />} />
-          <Route path="/cybersecurity" element={<Cyber />} />
+          <Route path="/cyber" element={<Cyber />} />
         </Routes>
       </BrowserRouter>
     </>

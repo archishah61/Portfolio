@@ -3,7 +3,7 @@ import { Terminal, Shield, Lock, ArrowDown } from 'lucide-react'
 
 export default function HeroCyber() {
     return (
-        <section id="hero" className='relative min-h-screen flex flex-col items-center justify-center px-4 sm:px-6'>
+        <section id="hero" className='relative min-h-[90vh] sm:min-h-screen flex flex-col items-center justify-center px-4 sm:px-6'>
             <div className='container max-w-5xl mx-auto text-center z-10'>
                 <div className='inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary mb-6 border border-primary/20 animate-fade-in'>
                     <Terminal className='w-4 h-4' />

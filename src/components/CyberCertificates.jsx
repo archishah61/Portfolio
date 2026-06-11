@@ -30,10 +30,10 @@ const certificates = [
 
 export default function CyberCertificates() {
     return (
-        <section id="certificates" className="py-20 px-4">
+        <section id="certificates" className="py-16 sm:py-20 px-4 sm:px-6">
             <div className="container max-w-5xl mx-auto">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
                         Courses & <span className="text-primary text-glow">Certificates</span>
                     </h2>
                     <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
@@ -47,7 +47,7 @@ export default function CyberCertificates() {
                             {/* Gradient Background */}
                             <div className={`absolute inset-0 bg-gradient-to-br ${cert.color} opacity-50 group-hover:opacity-100 transition-opacity duration-500`}></div>
                             
-                            <div className="relative p-8 flex flex-col h-full z-10">
+                            <div className="relative p-5 sm:p-8 flex flex-col h-full z-10">
                                 <Award className="w-10 h-10 text-primary mb-6" />
                                 <h3 className="text-xl font-bold mb-2">{cert.title}</h3>
                                 <div className="text-muted-foreground font-medium mb-1">{cert.issuer}</div>

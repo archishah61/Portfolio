@@ -54,7 +54,7 @@ function Navbar() {
                     )}
 
                     {/* desktop nav */}
-                    <div className="hidden md:flex space-x-8 mr-32">
+                    <div className="hidden md:flex space-x-6 lg:space-x-8 mr-16 lg:mr-32">
                         {currentNavItems.map((item, key) => (
                             item.isLink ? (
                                 <Link key={key} to={item.href} className="text-foreground/80 hover:text-primary transition-colors duration-300">

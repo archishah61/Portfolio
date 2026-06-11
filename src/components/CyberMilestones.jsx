@@ -29,10 +29,10 @@ const milestones = [
 
 export default function CyberMilestones() {
     return (
-        <section id="milestones" className="py-20 bg-primary/5 px-4">
+        <section id="milestones" className="py-16 sm:py-20 bg-primary/5 px-4 sm:px-6">
             <div className="container max-w-6xl mx-auto">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
                         Memorable <span className="text-primary text-glow">Milestones</span>
                     </h2>
                     <p className="text-muted-foreground text-lg">
@@ -40,7 +40,7 @@ export default function CyberMilestones() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {milestones.map((item) => (
                         <div key={item.id} className="group relative rounded-xl overflow-hidden glass-panel border border-primary/20 hover:border-primary/50 transition-all duration-300">
                             <div className="aspect-square w-full overflow-hidden">

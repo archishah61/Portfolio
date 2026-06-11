@@ -36,10 +36,10 @@ const timelineData = [
 
 export default function CyberTimeline() {
     return (
-        <section id="timeline" className="py-20 relative px-4">
+        <section id="timeline" className="py-16 sm:py-20 relative px-4 sm:px-6">
             <div className="container max-w-4xl mx-auto">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
                         The <span className="text-primary text-glow">Journey</span>
                     </h2>
                     <p className="text-muted-foreground text-lg">

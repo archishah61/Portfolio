@@ -5,22 +5,22 @@ import { Link } from 'react-router-dom'
 function HeroSection() {
     return (
         <div>
-            <section id='hero' className='relative min-h-screen flex flex-col items-center justify-center px-4'>
+            <section id='hero' className='relative min-h-screen flex flex-col items-center justify-center px-4 sm:px-6'>
                 <div className='container max-w-4xl mx-auto text-center z-10'>
                     <div className='space-y-6'>
-                        <h1 className='text-4xl md:text-6xl font-bold tracking-tight'>
+                        <h1 className='text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight'>
                             <span className='opacity-0 animate-fade-in'>Hi, I'm</span>
                             <span className='text-primary opacity-0 animate-fade-in-delay-1'>{" "}Archi</span>
                             <span className='text-gradient ml-2 opacity-0 animate-fade-in-delay-2'>{" "}Shah</span>
                         </h1>
-                        <p className='text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3'>
+                        <p className='text-sm sm:text-base md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3 px-2'>
                             I build modern web experiences using the Full Stack and am actively exploring the world of cybersecurity. I enjoy crafting clean, functional interfaces while feeding my curiosity for how systems work and how to protect them.
                         </p>
-                        <div className='opacity-0 animate-fade-in-delay-4 flex flex-col sm:flex-row justify-center items-center gap-4'>
-                            <a href='#projects' className='cosmic-button'>
+                        <div className='opacity-0 animate-fade-in-delay-4 flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 px-4'>
+                            <a href='#projects' className='cosmic-button w-full sm:w-auto text-sm sm:text-base'>
                                 View Web Dev Work
                             </a>
-                            {/* <Link to='/cyber' className='cosmic-button-outline'>
+                            {/* <Link to='/cyber' className='cosmic-button-outline w-full sm:w-auto text-sm sm:text-base'>
                                 Explore My Cyber Journey
                             </Link> */}
                         </div>

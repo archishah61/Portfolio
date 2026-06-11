@@ -119,9 +119,9 @@ function ContactSection() {
           },
         }}
       />
-      <section id="contact" className="py-24 px-4 relative bg-secondary/30">
+      <section id="contact" className="py-16 sm:py-24 px-4 sm:px-6 relative bg-secondary/30">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-center">
             Get In<span className="text-primary"> Touch</span>
           </h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
@@ -183,7 +183,7 @@ function ContactSection() {
                 </div>
               </div>
             </div>
-            <div className="bg-card p-8 rounded-lg shadow-xs">
+            <div className="bg-card p-5 sm:p-8 rounded-lg shadow-xs">
               <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>

@@ -30,10 +30,10 @@ const blogs = [
 
 export default function CyberBlogs() {
     return (
-        <section id="blogs" className="py-20 bg-primary/5 px-4">
+        <section id="blogs" className="py-16 sm:py-20 bg-primary/5 px-4 sm:px-6">
             <div className="container max-w-5xl mx-auto">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
                         <span className="text-primary text-glow">Write-ups</span> & Thoughts
                     </h2>
                     <p className="text-muted-foreground text-lg">
@@ -51,7 +51,7 @@ export default function CyberBlogs() {
                                         <span>•</span>
                                         <span>{blog.readTime}</span>
                                     </div>
-                                    <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors">{blog.title}</h3>
+                                    <h3 className="text-lg sm:text-2xl font-bold mb-3 group-hover:text-primary transition-colors">{blog.title}</h3>
                                     <p className="text-muted-foreground max-w-3xl">{blog.summary}</p>
                                 </div>
                                 <div className="md:pl-6 md:border-l border-primary/10 flex items-center">

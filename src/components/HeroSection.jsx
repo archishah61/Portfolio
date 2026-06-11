@@ -20,9 +20,9 @@ function HeroSection() {
                             <a href='#projects' className='cosmic-button'>
                                 View Web Dev Work
                             </a>
-                            <Link to='/cyber' className='cosmic-button-outline'>
+                            {/* <Link to='/cyber' className='cosmic-button-outline'>
                                 Explore My Cyber Journey
-                            </Link>
+                            </Link> */}
                         </div>
                     </div>
                 </div>

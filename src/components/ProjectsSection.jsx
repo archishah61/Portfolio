@@ -1,4 +1,5 @@
-import { ArrowRight, ExternalLink, Github } from "lucide-react"
+import { useState } from "react"
+import { ArrowRight, ExternalLink, Github, Play, X } from "lucide-react"
 
 const projects = [
     {
@@ -8,7 +9,8 @@ const projects = [
         image: "/projects/project2.png",
         tags: ["JavaScript", "Node.js", "Express.js", "EJS", "MongoDB", "TailwindCSS"],
         demoUrl: "https://wanderlust-w9vw.onrender.com/listings",
-        githubUrl: "https://github.com/archishah61/Wanderlust"
+        githubUrl: "https://github.com/archishah61/Wanderlust",
+        videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
     },
     {
         id: 2,
@@ -30,6 +32,8 @@ const projects = [
 ]
 
 function ProjectsSection() {
+    const [activeVideo, setActiveVideo] = useState(null);
+
     return (
         <div>
             <section id="projects" className="py-24 px-4 relative">
@@ -48,15 +52,26 @@ function ProjectsSection() {
                         {projects.map((project, key) => (
                             <div
                                 key={key}
-                                className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover flex flex-col"
+                                className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover flex flex-col relative"
                             >
                                 {/* ── Image ──────────────────────────────────────────────── */}
-                                <div className="h-48 overflow-hidden">
+                                <div className="h-48 overflow-hidden relative">
                                     <img
                                         src={project.image}
                                         alt={project.title}
                                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                     />
+                                    {/* Video Overlay */}
+                                    {project.videoUrl && (
+                                        <div 
+                                            className="absolute inset-0 bg-background/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center cursor-pointer backdrop-blur-[2px]"
+                                            onClick={() => setActiveVideo(project.videoUrl)}
+                                        >
+                                            <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground transform scale-75 group-hover:scale-100 transition-transform duration-300 shadow-lg">
+                                                <Play className="w-5 h-5 ml-1" />
+                                            </div>
+                                        </div>
+                                    )}
                                 </div>
 
                                 {/* ── Text / Tags / Icons ───────────────────────────────── */}
@@ -80,12 +95,22 @@ function ProjectsSection() {
                                     {/* icons — pushed down by mt-auto */}
                                     <div className="mt-auto flex justify-between items-center pt-4">
                                         <div className="flex space-x-3">
+                                            {project.videoUrl && (
+                                                <button
+                                                    onClick={() => setActiveVideo(project.videoUrl)}
+                                                    className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                                                    title="Watch Video Demo"
+                                                >
+                                                    <Play size={20} />
+                                                </button>
+                                            )}
                                             {project.demoUrl && (
                                                 <a
                                                     href={project.demoUrl}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
                                                     className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                                                    title="Live Demo"
                                                 >
                                                     <ExternalLink size={20} />
                                                 </a>
@@ -96,6 +121,7 @@ function ProjectsSection() {
                                                     target="_blank"
                                                     rel="noopener noreferrer"
                                                     className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                                                    title="Source Code"
                                                 >
                                                     <Github size={20} />
                                                 </a>
@@ -111,6 +137,28 @@ function ProjectsSection() {
                     </div>
                 </div>
             </section>
+
+            {/* Video Modal */}
+            {activeVideo && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-background/80 backdrop-blur-sm animate-fade-in" onClick={() => setActiveVideo(null)}>
+                    <div className="relative w-full max-w-4xl bg-card rounded-2xl overflow-hidden shadow-2xl border border-primary/20" onClick={(e) => e.stopPropagation()}>
+                        <button 
+                            onClick={() => setActiveVideo(null)}
+                            className="absolute top-4 right-4 z-10 p-2 bg-background/50 hover:bg-primary hover:text-primary-foreground rounded-full backdrop-blur-md transition-colors"
+                        >
+                            <X size={20} />
+                        </button>
+                        <div className="relative pt-[56.25%] w-full bg-black">
+                            <iframe 
+                                src={activeVideo}
+                                className="absolute inset-0 w-full h-full"
+                                allow="autoplay; encrypted-media; fullscreen"
+                                allowFullScreen
+                            />
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     )
 }

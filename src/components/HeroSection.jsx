@@ -13,9 +13,7 @@ function HeroSection() {
                             <span className='text-gradient ml-2 opacity-0 animate-fade-in-delay-2'>{" "}Shah</span>
                         </h1>
                         <p className='text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3'>
-                            I create stellar web experience with modern technologies.
-                            Specializing in front-end development, I build interfaces that are
-                            both beautiful and functional.
+                            I build modern web experiences using the Full Stack and am actively exploring the world of cybersecurity. I enjoy crafting clean, functional interfaces while feeding my curiosity for how systems work and how to protect them.
                         </p>
                         <div className='opacity-0 animate-fade-in-delay-4'>
                             <a href='#projects' className='cosmic-button'>

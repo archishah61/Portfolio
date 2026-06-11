@@ -1,4 +1,4 @@
-import { Briefcase, Code, User } from 'lucide-react'
+import { Handshake, Code, ShieldCheck } from 'lucide-react'
 
 function AboutSection() {
   return (
@@ -11,15 +11,15 @@ function AboutSection() {
           <div className='grid grid-cols-1 md:grid-cols-2 gap-12 items-center'>
             <div className='space-y-6'>
               <h3 className='text-2xl font-semibold'>
-                Passionate Web Developer
+                Passionate Developer & Cybersecurity Enthusiast
               </h3>
-              <p className='text-muted-foreground'>I'm a passionate web developer driven by creativity and clean design.
-                I specialize in building responsive, user-friendly interfaces using modern frontend technologies.
-                With a strong focus on performance and usability, I turn ideas into engaging digital experiences.
+              <p className='text-muted-foreground'>I'm a full-stack MERN developer who loves building clean, responsive, and user-friendly web experiences. I specialize in crafting interfaces
+                that are both functional and visually engaging, with a strong focus on performance and usability.
               </p>
-              <p className='text-muted-foreground'>Web development is not just my skill — it's my passion.
-                I enjoy building interfaces that feel intuitive and perform beautifully.
-                Keeping up with evolving tech, I aim to make the web more accessible and engaging.
+              <p className='text-muted-foreground'>Beyond development, I'm actively diving into the world of cybersecurity
+                exploring threat analysis, network protocols, and security fundamentals.
+                Driven by curiosity, I'm on a journey to understand not just how systems are built,
+                but how they can be secured and protected.
               </p>
 
               <div className='flex sm-flex-row gap-4 pt-4 justify-center'>
@@ -28,7 +28,7 @@ function AboutSection() {
                   Get In Touch
                 </a>
                 <a
-                  href="/ArchiShah_CV.pdf"          
+                  href="/ArchiShah_CV.pdf"
                   className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
                 >
                   Download CV
@@ -44,7 +44,7 @@ function AboutSection() {
                   <div className='text-left'>
                     <h4 className='font-semibold text-lg'>Web Development</h4>
                     <p className='text-muted-foreground'>
-                      Creating responsive websites and web applications with modern frameworks.
+                      Building responsive, full-stack web applications using the MERN stack with a focus on clean code, performance, and seamless user experience.
                     </p>
                   </div>
                 </div>
@@ -52,12 +52,12 @@ function AboutSection() {
               <div className='gradient-border p-6 card-hover'>
                 <div className='flex items-start gap-4'>
                   <div className='p-3 rounded-full bg-primary/10'>
-                    <User className='h-6 w-6 text-primary' />
+                    <ShieldCheck className='h-6 w-6 text-primary' />
                   </div>
                   <div className='text-left'>
-                    <h4 className='font-semibold text-lg'>UI/UX Design</h4>
+                    <h4 className='font-semibold text-lg'>Network & Security Fundamentals</h4>
                     <p className='text-muted-foreground'>
-                      Designing intuitive user interfaces and seamless user experiences.
+                      Currently learning core networking concepts, threat analysis, and SOC fundamentals — developing the skills to monitor, detect, and respond to real-world cyber threats.
                     </p>
                   </div>
                 </div>
@@ -65,12 +65,12 @@ function AboutSection() {
               <div className='gradient-border p-6 card-hover'>
                 <div className='flex items-start gap-4'>
                   <div className='p-3 rounded-full bg-primary/10'>
-                    <Briefcase className='h-6 w-6 text-primary' />
+                    <Handshake className='h-6 w-6 text-primary' />
                   </div>
                   <div className='text-left'>
-                    <h4 className='font-semibold text-lg'>Project Management</h4>
+                    <h4 className='font-semibold text-lg'>Problem Solving & Collaboration</h4>
                     <p className='text-muted-foreground'>
-                      With strong planning and communication, I manage projects efficiently from concept to completion.
+                      Strong analytical thinking and team collaboration skills, sharpened through real-world internship experience and hands-on project development.
                     </p>
                   </div>
                 </div>

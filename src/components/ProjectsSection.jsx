@@ -19,6 +19,14 @@ const projects = [
         demoUrl: "https://cloudpix.netlify.app/",
         githubUrl: "https://github.com/archishah61/CloudPix-Backend-"
     },
+    {
+        id: 3,
+        title: "LMS",
+        description: "Built a full-stack LMS, featuring AI-powered course generation, interview prep, roadmap builder, and student tools like enrollment, progress tracking, quizzes, and contests. Implemented JWT authentication, Multer file uploads, admin analytics dashboard, and course/student management using React Query.",
+        image: "/projects/project3.png",
+        tags: ["React.js", " TailwindCSS", "Node.js", "Express.js", "MySQL", "JWT"],
+        githubUrl: "https://github.com/archishah61/LMS"
+    },
 ]
 
 function ProjectsSection() {
@@ -72,22 +80,26 @@ function ProjectsSection() {
                                     {/* icons — pushed down by mt-auto */}
                                     <div className="mt-auto flex justify-between items-center pt-4">
                                         <div className="flex space-x-3">
-                                            <a
-                                                href={project.demoUrl}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                                            >
-                                                <ExternalLink size={20} />
-                                            </a>
-                                            <a
-                                                href={project.githubUrl}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                                            >
-                                                <Github size={20} />
-                                            </a>
+                                            {project.demoUrl && (
+                                                <a
+                                                    href={project.demoUrl}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                                                >
+                                                    <ExternalLink size={20} />
+                                                </a>
+                                            )}
+                                            {project.githubUrl && (
+                                                <a
+                                                    href={project.githubUrl}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                                                >
+                                                    <Github size={20} />
+                                                </a>
+                                            )}
                                         </div>
                                     </div>
                                 </div>
@@ -95,7 +107,7 @@ function ProjectsSection() {
                         ))}
                     </div>
                     <div className="text-center mt-12">
-                        <a className="cosmic-button w-fit flex items-center mx-auto gap-2" target="_blank" href="https://github.com/archishah61">Check My Github <ArrowRight size={16}/></a>
+                        <a className="cosmic-button w-fit flex items-center mx-auto gap-2" target="_blank" href="https://github.com/archishah61">Check My Github <ArrowRight size={16} /></a>
                     </div>
                 </div>
             </section>

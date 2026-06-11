@@ -10,7 +10,7 @@ const projects = [
         tags: ["JavaScript", "Node.js", "Express.js", "EJS", "MongoDB", "TailwindCSS"],
         demoUrl: "https://wanderlust-w9vw.onrender.com/listings",
         githubUrl: "https://github.com/archishah61/Wanderlust",
-        videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+        // videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
     },
     {
         id: 2,

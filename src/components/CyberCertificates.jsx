@@ -4,10 +4,10 @@ import { Award, ExternalLink } from 'lucide-react'
 const certificates = [
     {
         id: 1,
-        title: "CompTIA Security+",
+        title: "Getting started with Cisco Packat Tracer",
         issuer: "CompTIA",
         date: "Jan 2024",
-        link: "#",
+        link: "https://drive.google.com/drive/folders/1NfYypViTGB1qtsuJa_GkkPKx4BxaprC0",
         color: "from-blue-500/20 to-cyan-500/20",
     },
     {

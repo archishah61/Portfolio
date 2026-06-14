@@ -10,7 +10,7 @@ const projects = [
         tags: ["JavaScript", "Node.js", "Express.js", "EJS", "MongoDB", "TailwindCSS"],
         demoUrl: "https://wanderlust-w9vw.onrender.com/listings",
         githubUrl: "https://github.com/archishah61/Wanderlust",
-        // videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+        videoUrl: "/projectVideos/wanderlust.mp4"
     },
     {
         id: 2,
@@ -19,7 +19,8 @@ const projects = [
         image: "/projects/project1.png",
         tags: ["React.js", " TailwindCSS", "Node.js", "Express.js", "MongoDB", "JWT"],
         demoUrl: "https://cloudpix.netlify.app/",
-        githubUrl: "https://github.com/archishah61/CloudPix-Backend-"
+        githubUrl: "https://github.com/archishah61/Cloudpix",
+        videoUrl: "/projectVideos/cloudpix.mp4"
     },
     {
         id: 3,

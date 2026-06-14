@@ -37,8 +37,8 @@ function AboutSection() {
             </div>
             <div className='grid grid-cols-1 gap-6'>
               <div className='gradient-border p-6 card-hover'>
-                <div className='flex items-start gap-4'>
-                  <div className='p-3 rounded-full bg-primary/10'>
+                <div className='flex flex-col sm:flex-row items-start gap-3 sm:gap-4'>
+                  <div className='p-3 rounded-full bg-primary/10 self-start'>
                     <Code className='h-6 w-6 text-primary' />
                   </div>
                   <div className='text-left'>
@@ -50,8 +50,8 @@ function AboutSection() {
                 </div>
               </div>
               <div className='gradient-border p-6 card-hover'>
-                <div className='flex items-start gap-4'>
-                  <div className='p-3 rounded-full bg-primary/10'>
+                <div className='flex flex-col sm:flex-row items-start gap-3 sm:gap-4'>
+                  <div className='p-3 rounded-full bg-primary/10 self-start'>
                     <ShieldCheck className='h-6 w-6 text-primary' />
                   </div>
                   <div className='text-left'>
@@ -63,8 +63,8 @@ function AboutSection() {
                 </div>
               </div>
               <div className='gradient-border p-6 card-hover'>
-                <div className='flex items-start gap-4'>
-                  <div className='p-3 rounded-full bg-primary/10'>
+                <div className='flex flex-col sm:flex-row items-start gap-3 sm:gap-4'>
+                  <div className='p-3 rounded-full bg-primary/10 self-start'>
                     <Handshake className='h-6 w-6 text-primary' />
                   </div>
                   <div className='text-left'>
